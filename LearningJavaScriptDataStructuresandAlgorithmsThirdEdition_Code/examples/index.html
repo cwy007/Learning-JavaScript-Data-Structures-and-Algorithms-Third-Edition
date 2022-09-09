@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- base的作用 -->
+  <!-- 改变页面中a链接的默认行为 - 加载新的页面 -->
+  <!-- 设置base后，点击a链接，加载的html会显示到 base.target 设置的 iframe 中 -->
   <base target="myFrame" />
   <style>
     .mdl-layout__content {
@@ -37,6 +40,7 @@
         <span class="mdl-layout-title">Learning JavaScript Data Structures and Algorithms</span>
       </div>
       <!-- Chapters -->
+      <!-- tabs -->
       <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
         <a href="#scroll-tab-1" class="mdl-layout__tab is-active">01_02</a>
         <a href="#scroll-tab-3" class="mdl-layout__tab">03</a>
@@ -52,15 +56,30 @@
         <a href="#scroll-tab-13" class="mdl-layout__tab">13</a>
         <a href="#scroll-tab-14" class="mdl-layout__tab">14</a>
         <a href="#scroll-tab-15" class="mdl-layout__tab">15</a>
+        <a href="#cwy-test-iframe-content" class="mdl-layout__tab">cwy-test-iframe-content</a>
       </div>
     </header>
+    <!-- main 标签的使用 -->
     <main class="mdl-layout__content">
       <span class="iframe-padding">Please open the Developer Tools Console to see the output</span>
       <!-- Where the examples will be displayed -->
+      <!-- iframe的使用 -->
+      <!-- id="myFrame" 这里的div只是设置iframe的容器样式，避免侧边栏遮盖iframe的内容 -->
       <div id="myFrame" class="iframe-padding">
         <iframe name="myFrame" src=""></iframe>
       </div>
       <!-- Where the examples will be displayed - end -->
+      <!-- 下面的每个section，等价于antd中的tabPanel，点击header中tab，会显示对应的 tabPanel -->
+      <section class="mdl-layout__tab-panel is-active" id="cwy-test-iframe-content">
+        <div class="page-content mdl-layout--fixed-drawer">
+          <div class="mdl-layout__drawer is-visible">
+            <nav class="mdl-navigation">
+              <!--  -->
+              <a class="mdl-navigation__link" href="chapter01_02/01-HelloWorld.html">cwy</a>
+            </nav>
+          </div>
+        </div>
+      </section>
       <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
         <div class="page-content mdl-layout--fixed-drawer">
           <div class="mdl-layout__drawer is-visible">
