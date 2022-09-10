@@ -1,6 +1,11 @@
 // @ts-check
 import Stack from '../data-structures/stack';
 
+/**
+ * 栈的使用实例 - 平衡圆括号
+ * @param {*} symbols
+ * @returns
+ */
 export function parenthesesChecker(symbols) {
   const stack = new Stack();
   const opens = '([{';

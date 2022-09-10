@@ -1,6 +1,18 @@
 // @ts-check
 import Stack from '../data-structures/stack';
 
+/**
+ * 栈的使用实例 - 汉诺塔
+ * @param {*} plates
+ * @param {*} source
+ * @param {*} helper
+ * @param {*} dest
+ * @param {*} sourceName
+ * @param {*} helperName
+ * @param {*} destName
+ * @param {*} moves
+ * @returns
+ */
 function towerOfHanoi(plates, source, helper, dest, sourceName, helperName, destName, moves = []) {
   if (plates <= 0) {
     return moves;

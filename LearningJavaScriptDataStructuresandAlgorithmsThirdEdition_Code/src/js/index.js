@@ -4,12 +4,12 @@ import * as _util from './util';
 export const util = _util;
 
 // chapter 03
-export { default as StackArray } from './data-structures/stack-array';
-export { default as Stack } from './data-structures/stack';
+export { default as StackArray } from './data-structures/stack-array'; // 使用数组实现栈
+export { default as Stack } from './data-structures/stack'; // 使用对象实现栈
 export { hanoi } from './others/hanoi';
 export { hanoiStack } from './others/hanoi';
 export { baseConverter } from './others/base-converter';
-export { decimalToBinary } from './others/base-converter';
+export { decimalToBinary } from './others/base-converter'; // 十进制转二进制
 export { parenthesesChecker } from './others/balanced-symbols';
 
 // chapter 04
