@@ -22,7 +22,7 @@ class Stack {
   }
 
   /** 如何栈里没有任何元素就返回true，否则返回false */
-  get isEmpty() {
+  isEmpty() {
     return this.items.length === 0;
   }
 
@@ -45,4 +45,6 @@ stack.push(8);
 
 console.log('stack-->', stack.peek());
 console.log('stack.size-->', stack.size)
-stack
+
+console.log('stack-->', stack);
+

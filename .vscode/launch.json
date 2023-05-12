@@ -2,15 +2,15 @@
   "configurations": [
     {
       "type": "node",
-      "name": "Run Current File",
+      "name": "Run stack-array",
       "request": "launch",
       "program": "${workspaceFolder}/algos/stack/stack-array.js"
     },
     {
       "type": "node",
-      "name": "Run Current File2",
+      "name": "Run stack",
       "request": "launch",
-      "program": "${workspaceFolder}/algos/stack/stack-array.js"
+      "program": "${workspaceFolder}/algos/stack/stack.js"
     }
   ]
 }
