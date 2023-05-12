@@ -17,6 +17,12 @@
       "name": "Run decimalToBinary",
       "request": "launch",
       "program": "${workspaceFolder}/algos/stack/examples/decimalToBinary.js"
+    },
+    {
+      "type": "node",
+      "name": "Run baseConverter",
+      "request": "launch",
+      "program": "${workspaceFolder}/algos/stack/examples/baseConverter.js"
     }
   ]
 }
