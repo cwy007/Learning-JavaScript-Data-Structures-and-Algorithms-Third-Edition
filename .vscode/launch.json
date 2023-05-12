@@ -11,6 +11,12 @@
       "name": "Run stack",
       "request": "launch",
       "program": "${workspaceFolder}/algos/stack/stack.js"
+    },
+    {
+      "type": "node",
+      "name": "Run decimalToBinary",
+      "request": "launch",
+      "program": "${workspaceFolder}/algos/stack/examples/decimalToBinary.js"
     }
   ]
 }
