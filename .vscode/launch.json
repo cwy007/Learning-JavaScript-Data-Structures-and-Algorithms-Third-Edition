@@ -29,6 +29,12 @@
       "name": "Run queue-object",
       "request": "launch",
       "program": "${workspaceFolder}/algos/queue/queue-object.js"
+    },
+    {
+      "type": "node",
+      "name": "Run deque",
+      "request": "launch",
+      "program": "${workspaceFolder}/algos/queue/double-ended-queue.js"
     }
   ]
 }
