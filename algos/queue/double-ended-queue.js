@@ -97,6 +97,8 @@ class DoubleEndedQueue {
   }
 }
 
+module.exports = DoubleEndedQueue;
+
 const deque = new DoubleEndedQueue();
 
 const a = deque.isEmpty();

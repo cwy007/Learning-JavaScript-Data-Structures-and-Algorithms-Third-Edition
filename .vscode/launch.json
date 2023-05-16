@@ -41,6 +41,12 @@
       "name": "Run hot-potato",
       "request": "launch",
       "program": "${workspaceFolder}/algos/queue/example/hot-potato.js"
+    },
+    {
+      "type": "node",
+      "name": "Run palindrome-checker",
+      "request": "launch",
+      "program": "${workspaceFolder}/algos/queue/example/palindrome-checker.js"
     }
   ]
 }
