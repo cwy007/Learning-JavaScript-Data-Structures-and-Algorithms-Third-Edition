@@ -35,6 +35,12 @@
       "name": "Run deque",
       "request": "launch",
       "program": "${workspaceFolder}/algos/queue/double-ended-queue.js"
+    },
+    {
+      "type": "node",
+      "name": "Run hot-potato",
+      "request": "launch",
+      "program": "${workspaceFolder}/algos/queue/example/hot-potato.js"
     }
   ]
 }

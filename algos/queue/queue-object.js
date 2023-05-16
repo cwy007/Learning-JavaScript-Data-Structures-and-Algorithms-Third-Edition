@@ -66,6 +66,8 @@ class Queue {
   }
 }
 
+module.exports = Queue;
+
 const q = new Queue()
 q.enqueue(5);
 q.enqueue(8);
@@ -75,3 +77,4 @@ q.dequeue();
 e = q.isEmpty()
 
 console.log('this is a breakpoint-->')
+
