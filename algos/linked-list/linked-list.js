@@ -68,7 +68,16 @@ class LinkedList {
   remove(element) {}
 
   /** 返回元素在链表中的索引 */
-  indexOf(element) {}
+  indexOf(element) {
+    let current = this.head;
+    for (let i = 0; i < this.count && current != null; i++) {
+      if (this.equalsFn(element, current.element)) {
+        return i;
+      }
+      current = current.next;
+    }
+    rerurn -1;
+  }
 
   /** 从链表的特定位置移除一个元素 */
   removeAt(index) {
@@ -112,6 +121,8 @@ list.push(10)
 a = list.getElementAt(2)
 b = list.getElementAt(1)
 list.insert(14, 1)
+
+c = list.indexOf(14)
 
 
 console.log('breakpoint-->')
