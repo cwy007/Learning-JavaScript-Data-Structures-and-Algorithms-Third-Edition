@@ -65,7 +65,10 @@ class LinkedList {
   }
 
   /** 从链表中移除一个元素 */
-  remove(element) {}
+  remove(element) {
+    const index = this.indexOf(element);
+    return this.removeAt(index);
+  }
 
   /** 返回元素在链表中的索引 */
   indexOf(element) {
@@ -101,13 +104,32 @@ class LinkedList {
   }
 
   /** 链表中是否包含元素 */
-  isEmpty() {}
+  isEmpty() {
+    return this.size() === 0;
+  }
 
   /** 链表包含的元素个数 */
-  size() {}
+  size() {
+    return this.count;
+  }
+
+  getHead() {
+    return this.head;
+  }
 
   /** 整个链表的字符串 */
-  toString() {}
+  toString() {
+    if (this.head == null) {
+      return '';
+    }
+    let objString = `${this.head.element}`;
+    let current = this.head.next; // current 当前索引对应的节点
+    for (let i = 1; i < this.size() && current != null; i++) {
+      objString = `${objString},${current.element}`;
+      current = current.next;
+    }
+    return objString;
+  }
 
 }
 
@@ -124,6 +146,8 @@ list.insert(14, 1)
 
 c = list.indexOf(14)
 d = list.indexOf(140)
+e = list.remove(10)
+
 
 
 console.log('breakpoint-->')
