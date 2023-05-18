@@ -47,6 +47,18 @@
       "name": "Run palindrome-checker",
       "request": "launch",
       "program": "${workspaceFolder}/algos/queue/example/palindrome-checker.js"
+    },
+    {
+      "type": "node",
+      "name": "Run event-loop",
+      "request": "launch",
+      "program": "${workspaceFolder}/algos/queue/example/event-loop.js"
+    },
+    {
+      "type": "node",
+      "name": "Run linked-list",
+      "request": "launch",
+      "program": "${workspaceFolder}/algos/linked-list/linked-list.js"
     }
   ]
 }

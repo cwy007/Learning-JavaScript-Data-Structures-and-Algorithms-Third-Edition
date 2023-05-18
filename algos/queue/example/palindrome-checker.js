@@ -51,3 +51,6 @@ e = palindromeChecker('Was it a car or a cat I saw')
 f = palindromeChecker('Step on no pets')
 
 console.log('breakpoint-->')
+
+// 事件循环
+// https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/
