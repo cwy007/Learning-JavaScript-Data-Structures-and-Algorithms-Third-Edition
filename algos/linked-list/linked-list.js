@@ -76,7 +76,7 @@ class LinkedList {
       }
       current = current.next;
     }
-    rerurn -1;
+    return -1;
   }
 
   /** 从链表的特定位置移除一个元素 */
@@ -123,6 +123,7 @@ b = list.getElementAt(1)
 list.insert(14, 1)
 
 c = list.indexOf(14)
+d = list.indexOf(140)
 
 
 console.log('breakpoint-->')
