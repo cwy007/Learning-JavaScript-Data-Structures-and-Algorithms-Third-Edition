@@ -34,13 +34,29 @@ class LinkedList {
   }
 
   /** 向链表的特定位置插入一个新元素 */
-  insert(element, position) {}
+  insert(element, index) {
+    if (index >= 0 && index <= this.count) {
+      const node = new Node(element);
+      if (index === 0) {
+        node.next = this.head;
+        this.head = node;
+      } else {
+        const previous = this.getElementAt(index - 1);
+        const current = previous.next;
+        node.next = current;
+        previous.next = node;
+      }
+      this.count++; // 更新链表长度
+      return true;
+    }
+    return false;
+  }
 
   /** 返回链表中特定位置的元素 */
   getElementAt(index) {
-    if (index >= 0 && index < this.count) {
+    if (index >= 0 && index <= this.count) {
       let current = this.head;
-      for (let i = 0; i < index; i++) {
+      for (let i = 0; i < index && current != null; i++) {
         current = current.next;
       }
       return current; // 表示 index 处的元素
@@ -65,7 +81,7 @@ class LinkedList {
         this.head = current.next;
       } else {
         const previous = this.getElementAt(index - 1);
-        current = previous.next
+        current = previous.next // index 处的节点
         // 将 previous 与 current 的下一项链接起来：跳过 current，从而移除它
         previous.next = current.next;
       }
@@ -95,6 +111,7 @@ list.push(10)
 
 a = list.getElementAt(2)
 b = list.getElementAt(1)
+list.insert(14, 1)
 
 
 console.log('breakpoint-->')
