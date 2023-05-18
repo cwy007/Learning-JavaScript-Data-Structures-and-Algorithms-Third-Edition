@@ -1,15 +1,15 @@
-function defaultEquals(a, b) {
+export function defaultEquals(a, b) {
   return a === b;
 }
 
-class Node {
+export class Node {
   constructor(element, next) {
     this.element = element;
     this.next = next;
   }
 }
 
-class LinkedList {
+export class LinkedList {
   constructor(equalsFn = defaultEquals) {
     this.count = 0;
     this.head = undefined;
